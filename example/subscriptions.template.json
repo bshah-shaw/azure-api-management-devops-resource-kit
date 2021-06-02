@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
       "ApimServiceName": {
@@ -9,13 +9,13 @@
     "resources": [
         {
             "type": "Microsoft.ApiManagement/service/subscriptions",
-            "name": "[concat(parameters('ApimServiceName'), '/53c765632095310385070001')]",
+            "name": "[concat(parameters('ApimServiceName'), '/master')]",
             "apiVersion": "2018-01-01",
             "scale": null,
             "properties": {
-                "userId": "[resourceId('Microsoft.ApiManagement/service/users', parameters('ApimServiceName'), 'john-doe-contoso-com')]",
-                "productId": "[resourceId('Microsoft.ApiManagement/service/products', parameters('ApimServiceName'), 'starter')]",
-                "displayName": "Starter product subscription",
+                "userId": "[resourceId('Microsoft.ApiManagement/service/users', parameters('ApimServiceName'), '/1')]",
+                "productId": "[resourceId('Microsoft.ApiManagement/service/products', parameters('ApimServiceName'), 'unlimited')]",
+                "displayName": "Built-in all-access subscription",
                 "state": "active"
             }
         }

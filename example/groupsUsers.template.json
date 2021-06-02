@@ -9,7 +9,7 @@
     "resources": [
         {
             "type": "Microsoft.ApiManagement/service/groups/users",
-            "name": "[concat(parameters('ApimServiceName'), '/contosogroup/john-doe-contoso-com')]",
+            "name": "[concat(parameters('ApimServiceName'), '/administrators/1')]",
             "apiVersion": "2018-01-01",
             "scale": null,
             "properties": {}
