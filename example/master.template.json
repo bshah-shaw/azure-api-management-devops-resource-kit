@@ -158,7 +158,7 @@
             // "[resourceId('Microsoft.Resources/deployments', 'productStarterTemplate')]",
              "[resourceId('Microsoft.Resources/deployments', 'usersTemplate')]"
             ]
-         },
+         }
     ],
     "outputs": {}
 }

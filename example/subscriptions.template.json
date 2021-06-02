@@ -13,8 +13,7 @@
             "apiVersion": "2018-01-01",
             "scale": null,
             "properties": {
-                "userId": "[resourceId('Microsoft.ApiManagement/service/users', parameters('ApimServiceName'), '/1')]",
-                "productId": "[resourceId('Microsoft.ApiManagement/service/products', parameters('ApimServiceName'), 'unlimited')]",
+                "scope": "[concat(resourceId('Microsoft.ApiManagement/service', parameters('ApimServiceName')), '/')]",
                 "displayName": "Built-in all-access subscription",
                 "state": "active"
             }
