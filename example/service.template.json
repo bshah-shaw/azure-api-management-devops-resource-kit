@@ -49,7 +49,7 @@
             "tags": {
                 "CostCenter": "04181",
                 "Dept": "EA",
-                "Environment": "dev",
+                "Environment": "prd",
                 "Owner": "bhavesh.shah@shawinc.com"},
             "sku": {
                 "name": "[parameters('sku')]",
