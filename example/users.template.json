@@ -1,24 +1,27 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "ApimServiceName": {
+          "ApimServiceName": {
           "type": "string"
         }
     },
     "resources": [
         {
             "type": "Microsoft.ApiManagement/service/users",
-            "name": "[concat(parameters('ApimServiceName'), '/john-doe-contoso-com')]",
+            "name": "[concat(parameters('ApimServiceName'), '/1')]",
             "apiVersion": "2018-01-01",
             "scale": null,
             "properties": {
-                "firstName": "John",
-                "lastName": "Doe",
-                "email": "john.doe@contoso.com",
+                "firstName": "Administrator",
+                "email": "bhavesh.shah@shawinc.com",
                 "state": "active",
-                "note": "Internal consumer of our APIs",
-                "confirmation": "invite"
+                "identities": [
+                    {
+                        "provider": "Azure",
+                        "id": "bhavesh.shah@shawinc.com"
+                    }
+                ],
             }
         }
     ]
