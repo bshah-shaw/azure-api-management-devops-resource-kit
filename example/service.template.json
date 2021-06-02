@@ -1,6 +1,6 @@
 {
     "$schema":
-        "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+        "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
         "ApimServiceName": {
@@ -45,8 +45,12 @@
             "apiVersion": "2018-01-01",
             "name": "[parameters('ApimServiceName')]",
             "type": "Microsoft.ApiManagement/service",
-            "location": "[resourceGroup().location]",
-            "tags": {},
+            "location": "East US 2",
+            "tags": {
+                "CostCenter": "04181",
+                "Dept": "EA",
+                "Environment": "dev",
+                "Owner": "bhavesh.shah@shawinc.com"},
             "sku": {
                 "name": "[parameters('sku')]",
                 "capacity": "[parameters('skuCount')]"

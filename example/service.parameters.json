@@ -4,13 +4,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "publisherEmail": {
-            "value": "admin@contoso.com"
+            "value": "bhavesh.shah@shawinc.com"
         },
         "publisherName": {
-            "value": "Contoso"
+            "value": "Shaw Industries"
         },
         "ApimServiceName": {
-            "value": "contosoapim-dev"
+            "value": "sz-ue2-apimgmtsvc-p-api-01"
         }
     }
 }

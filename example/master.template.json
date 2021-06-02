@@ -31,7 +31,7 @@
         "sku": {
             "type": "string",
             "allowedValues": ["Developer", "Standard", "Premium"],
-            "defaultValue": "Developer",
+            "defaultValue": "Premium",
             "metadata": {
                 "description": "The pricing tier of this API Management service"
             }
