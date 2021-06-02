@@ -153,11 +153,7 @@
               "parameters": {
                  "ApimServiceName": {"value": "[parameters('ApimServiceName')]" }
                }
-            },
-            "dependsOn": [
-            // "[resourceId('Microsoft.Resources/deployments', 'productStarterTemplate')]",
-             "[resourceId('Microsoft.Resources/deployments', 'usersTemplate')]"
-            ]
+            }
          }
     ],
     "outputs": {}
